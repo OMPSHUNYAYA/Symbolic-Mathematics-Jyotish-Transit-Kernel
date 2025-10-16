@@ -1,0 +1,36 @@
+name: Validate SSM-JTK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'golden_all_v2_1.csv'
+      - 'calc_*.json'
+      - 'validate_golden_all.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Show Python version
+        run: python --version
+
+      - name: Run SSM-JTK validator
+        run: |
+          python validate_golden_all.py --golden golden_all_v2_1.csv --manifests . --tol 1e-5 | tee validator_output.txt
+
+      - name: Upload validator log (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validator-output
+          path: validator_output.txt
