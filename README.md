@@ -3,7 +3,7 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel?style=flat&logo=github) ![GitHub Stars](https://img.shields.io/github/stars/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel?style=flat&logo=github) ![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-blue?style=flat&logo=creative-commons)
 
-**SSM-JTK - v2.1 (PDF):** [Preview](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/docs/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf) • [Download](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/raw/main/docs/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf)
+**SSM-JTK - v2.1 (PDF):** [Preview](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf) • [Download](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/raw/main/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf)
 
 ## What this is
 Ephemeris-independent Jyotish transit kernel (SSM-JTK) that provides **daily sidereal (Lahiri) longitudes**, derived **rasi index**, and **node identity** — shipped as a golden CSV with calc manifests and an **offline validator** (public research).
@@ -16,7 +16,7 @@ Ephemeris-independent Jyotish transit kernel (SSM-JTK) that provides **daily sid
 - **Acceptance report:** [Preview](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/acceptance_report_v2_1.txt) • [Download](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/raw/main/acceptance_report_v2_1.txt)
 - **Validator (Python):** [Preview](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/validate_golden_all.py) • [Download](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/raw/main/validate_golden_all.py)
 
-See the [Spec (PDF)](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/docs/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf).
+See the [Spec (PDF)](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/blob/main/SSM_Jyotish%20Transit%20Kernel_ver2.1.pdf).
 
 ## Manifests
 Manifests are included in this repository as `calc_*.json` (currently in the repository root). The validator will discover them via the `--manifests .` path used above.
