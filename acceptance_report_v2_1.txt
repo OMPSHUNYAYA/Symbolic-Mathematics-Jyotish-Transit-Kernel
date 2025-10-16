@@ -1,0 +1,27 @@
+Golden   : golden_all_v2_1.csv
+Manifests: .\manifests
+Tol(deg) : 1e-05
+------------------------------------------------------------------------
+Jupiter  | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Jupiter_v20.json
+Ketu     | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Ketu_v20.json
+Mars     | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Mars_v20.json
+Mercury  | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Mercury_v20.json
+Moon     | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Moon_v20.json
+Neptune  | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Neptune_v20.json
+Rahu     | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Rahu_v20.json
+Saturn   | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Saturn_v20.json
+Sun      | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Sun_v20.json
+Uranus   | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Uranus_v20.json
+Venus    | rows=14975 | max_abs_err=0.00000000 deg | mismatches=  0 | PASS
+          | manifest: calc_Venus_v20.json
+------------------------------------------------------------------------
