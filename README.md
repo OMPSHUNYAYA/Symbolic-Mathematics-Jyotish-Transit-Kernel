@@ -9,6 +9,10 @@
 
 # NEW — **SSM-JA Offline Deterministic Observatory**
 
+**Live GitHub Pages observatory:**
+
+https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_3_11.html
+
 The repository now includes:
 
 `SSM-JA/`
