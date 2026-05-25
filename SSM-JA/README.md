@@ -840,9 +840,9 @@ See: [LICENSE](./LICENSE)
 
 ---
 
-### **Reference Implementation (SSM-JA HTML Release)**
+### **Open Reference Implementation (SSM-JA HTML Release)**
 
-The SSM-JA HTML reference implementation is released as an open reference implementation.
+The SSM-JA HTML reference implementation is released under an **open reference implementation license**.
 
 No registration, fees, or approval are required to:
 
