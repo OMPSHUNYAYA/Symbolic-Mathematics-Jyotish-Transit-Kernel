@@ -1,0 +1,12 @@
+JA or SSM-JA — Hash Freeze (SHA256)
+
+demo\SSM-JA_v3_3_11.html
+
+SHA256:
+2adffbecdc894f1be3611962fc1b96e4d983e996d5c070d4b4e955ed92b039d8
+
+same file -> same hash
+different file -> different hash
+
+embedded deterministic kernel
+is part of the release identity
