@@ -1,0 +1,343 @@
+Open Standard License — JA / SSM-JA Reference Implementation
+
+SSM-JA — Ephemeris-Independent Jyotish Atlas
+
+Shunyaya Structural Mathematical Observatory Framework
+
+Legal Status
+
+This license is a permissive Open Standard license for JA or SSM-JA reference implementation.
+
+To the maximum extent permitted by applicable law, this license grants rights similar in spirit to permissive open-source licenses, while preserving truthful representation requirements for the SSM-JA name and reference implementation.
+
+If any provision is found unenforceable, the remaining provisions remain in effect.
+
+Nature of Release
+
+This is a deterministic observational reference implementation.
+
+It is intended to demonstrate:
+
+- ephemeris-independent observational structure
+- deterministic sidereal realization
+- offline browser-native astronomical observation
+- structural propagation from embedded deterministic kernels
+
+This release is not presented as:
+
+- certified astronomical software
+- prediction infrastructure
+- production-grade astronomical tooling
+- or authoritative professional Jyotish guidance
+
+Behavioral guarantees apply only within the scope of the released reference implementation and its defined structural assumptions.
+
+Permission
+
+Permission is hereby granted, free of charge, to any person or organization to:
+
+- use
+- execute
+- study
+- reproduce
+- publish
+- distribute
+- modify
+- implement
+- extend
+
+the SSM-JA reference implementation, in whole or in part, for commercial or non-commercial use, subject only to the representation and naming conditions defined in this license.
+
+No registration, fees, or approval required.
+
+No Restrictions on Use
+
+This reference implementation imposes no restrictions on usage except:
+
+- truthful representation
+- non-misleading use of the SSM-JA name
+
+Attribution is not required, but is encouraged for ecosystem clarity and structural integrity.
+
+No endorsement, certification, or official astronomical authority is implied.
+
+No runtime obligations apply.
+
+Separation of License and Structural Correctness
+
+This license governs legal usage, distribution, and representation.
+
+It does not govern, alter, or override deterministic structural realization.
+
+Structural realization is defined independently by:
+
+`chart_output = resolve(embedded_kernel_structure)`
+
+Legal permission does not imply observational correctness.
+
+Observational correctness does not depend on legal permission.
+
+Practical Interpretation
+
+This license governs usage and representation.
+
+It does not govern astronomical truth.
+
+Correctness within this model is determined solely by deterministic structural realization.
+
+Licensing governs usage — not realization correctness.
+
+Deterministic structural reproducibility is expressed as:
+
+`same input -> same deterministic chart structure`
+
+and:
+
+`same embedded kernel -> same deterministic realization pathway`
+
+Clarification — Relationship to Astronomy
+
+This reference implementation does not claim that astronomical ephemerides are unnecessary.
+
+Modern ephemeris systems remain among the most sophisticated astronomical achievements ever developed.
+
+SSM-JA instead explores whether:
+
+- bounded observational continuity
+- reproducible sidereal realization
+- Panchang propagation
+- and long-horizon Dasha continuity
+
+can emerge from:
+
+- compact deterministic structure
+- embedded sidereal kernels
+- and offline structural propagation
+
+Representation & Naming
+
+Modified or extended implementations:
+
+- must not be presented as the canonical SSM-JA reference implementation unless deterministic structural behavior is preserved
+- must not imply official authorship, endorsement, certification, or governance authority
+
+Use of the names:
+
+- SSM-JA
+- JA
+- Shunyaya
+
+must not imply:
+
+- official certification
+- astronomical authority
+- production endorsement
+- or governance status
+
+Recommended Attribution (Optional)
+
+Preferred form:
+
+Implements JA or SSM-JA — Ephemeris-Independent Jyotish Atlas
+
+Attribution must not imply endorsement.
+
+Scope of the Reference Implementation
+
+This release includes:
+
+- embedded deterministic sidereal kernel
+- offline browser-native execution
+- deterministic chart realization
+- Panchang observation
+- Dasha propagation
+- transit observation
+- runtime kernel integrity verification
+- deterministic chart rendering
+
+SSM-JA demonstrates a deterministic observational architecture where realization emerges from embedded structure:
+
+`chart_output = resolve(embedded_sidereal_kernel_structure)`
+
+What This Demonstrates
+
+- deterministic offline chart realization
+- browser-native astronomical observation
+- reproducible structural propagation
+- ephemeris-independent observational continuity
+- deterministic Panchang realization
+- long-horizon Dasha continuity
+- structural astronomical observability
+- deterministic realization from embedded kernels
+
+Conformance
+
+An implementation is considered compatible if it preserves:
+
+- deterministic structural realization
+- offline observational continuity
+- reproducible chart realization
+- deterministic Panchang behavior
+- deterministic Dasha propagation
+- identical-output behavior under identical inputs
+- embedded-kernel-driven realization
+
+Conformance is judged solely by observable behavior — not internal implementation details.
+
+`same input -> same chart structure`
+
+Conflict and Limitation Handling
+
+This reference implementation intentionally supports bounded observational scope.
+
+The implementation may reject, limit, or warn for:
+
+- unsupported date ranges
+- invalid timezone structure
+- malformed coordinates
+- unsupported realization conditions
+
+No forced realization is required outside supported structural bounds.
+
+Normalization Principle
+
+For deterministic realization:
+
+`normalized_longitude = longitude mod 360`
+
+Deterministic realization depends on:
+
+- normalized sidereal continuity
+- deterministic input structure
+- deterministic embedded kernel behavior
+
+In the reference implementation:
+
+SHA-256 runtime integrity verification is used for kernel integrity demonstration.
+
+Deterministic Replay Principle
+
+Correctness remains invariant under repeat execution:
+
+`same input -> same deterministic chart structure`
+
+This ensures:
+
+`repeat execution != realization divergence`
+
+Observational realization depends only on:
+
+- deterministic input
+- embedded kernel structure
+- release version
+
+Relationship to SSM-JTK
+
+SSM-JA is structurally connected to SSM-JTK.
+
+SSM-JTK defines the deterministic transit-kernel direction.
+
+SSM-JA applies that direction into:
+
+- browser-native observation
+- chart realization
+- Panchang propagation
+- and deterministic offline observability
+
+SSM-JTK follows its own separate licensing terms.
+
+Relationship to Shunyaya Framework
+
+SSM-JA is part of the broader Shunyaya ecosystem.
+
+It aligns with the structural principle:
+
+`output = resolve(structure)`
+
+In this implementation:
+
+`jyotish_output = resolve(embedded_sidereal_kernel_structure)`
+
+Architecture License
+
+The broader SSM-JA / JA architecture, conceptual structure, and documentation are licensed under:
+
+Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)
+
+Permitted:
+
+- research
+- educational use
+- academic study
+- non-commercial reproduction
+- non-commercial adaptation
+
+Commercial use of the architecture, documentation, or conceptual framework is not permitted under this license without separate written permission.
+
+Full license:
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Privacy and Local Execution
+
+SSM-JA follows an offline-first observational model.
+
+The reference implementation does not:
+
+- upload chart data
+- require accounts
+- require cloud synchronization
+- maintain centralized chart storage
+- transmit birth information remotely
+
+All calculations occur locally inside the browser.
+
+This is a deliberate architectural and privacy decision.
+
+Responsibility
+
+Use of SSM-JA is entirely at the user's own responsibility.
+
+This reference implementation demonstrates:
+
+- deterministic observational realization
+- offline browser-native execution
+- embedded structural propagation
+- reproducible chart structure
+
+It does not provide:
+
+- certified astronomical guarantees
+- prediction guarantees
+- professional advisory guarantees
+- safety-critical guarantees
+- regulatory certification
+- financial, legal, medical, or professional guidance
+
+No Warranty
+
+THE SSM-JA REFERENCE IMPLEMENTATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+THIS INCLUDES, BUT IS NOT LIMITED TO:
+
+- MERCHANTABILITY
+- FITNESS FOR A PARTICULAR PURPOSE
+- NON-INFRINGEMENT
+
+IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THIS IMPLEMENTATION.
+
+Closing Statement
+
+SSM-JA explores a simple but profound architectural possibility:
+
+bounded astronomical observability may emerge deterministically from compact embedded structure without requiring runtime ephemeris dependency during execution.
+
+The purpose of this release is to encourage:
+
+- independent validation
+- reproducibility testing
+- observational comparison
+- deterministic observatory research
+- and safe experimentation
+
+SSM-JA is released as a minimal, verifiable reference implementation of that possibility.
