@@ -10,6 +10,12 @@
 
 ---
 
+**Live browser-native observatory (GitHub Pages):**
+
+https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_3_11.html
+
+---
+
 ## What's New in This Release
 
 This release embeds the deterministic golden kernel directly inside the HTML file.
