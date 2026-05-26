@@ -35,6 +35,24 @@ The browser now receives a fully self-contained deterministic observation enviro
 
 ---
 
+## **JA Structural Planetary Observatory Architecture**
+
+The browser itself becomes a self-contained deterministic planetary realization engine.
+
+The observatory operates through:
+
+`embedded deterministic structure -> browser-native realization -> reproducible observation`
+
+The diagram below summarizes the architectural direction of JA / SSM-JA as a portable single-file structural planetary observatory.
+
+![JA Structural Planetary Observatory Architecture](./assets/JA_structural_observatory_architecture.png)
+
+Core invariant:
+
+`same structure -> same realization`
+
+---
+
 ## Overview
 
 JA or SSM-JA is an ephemeris-independent Jyotish observation atlas built as a single-file offline browser application.
@@ -202,6 +220,7 @@ Release folders:
 
 - `demo/`
 - `VERIFY/`
+- `assets/`
 
 Standalone observational release:
 
@@ -251,6 +270,7 @@ Current release includes:
 - Sookshma Antardasha
 - Timestamp-resolved Panchang
 - Transit charts
+- Planet display ordering by ascending planetary longitude within charts
 - Nakshatra mapping
 - Nakshatra lord mapping
 - Moon Nakshatra and Pada
