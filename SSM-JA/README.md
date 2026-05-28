@@ -434,33 +434,25 @@ Example date:
 
 ### Sunrise
 
-```
-+----------------------+-------------+--------------+
-| Location             | JA          | RMC Observed |
-+----------------------+-------------+--------------+
-| New Delhi            | 05:24:49 AM | 05:25:00 AM  |
-| Chennai              | 05:41:30 AM | 05:42:00 AM  |
-| Kolkata              | 04:52:19 AM | 04:52:00 AM  |
-| Mumbai               | 06:01:08 AM | 06:01:00 AM  |
-| Nagpur               | 05:32:05 AM | 05:32:00 AM  |
-| Guwahati             | 04:31:51 AM | 04:32:00 AM  |
-+----------------------+-------------+--------------+
-```
+| Location | JA | RMC Observed |
+|---|---|---|
+| New Delhi | 05:24:49 AM | 05:25:00 AM |
+| Chennai | 05:41:30 AM | 05:42:00 AM |
+| Kolkata | 04:52:19 AM | 04:52:00 AM |
+| Mumbai | 06:01:08 AM | 06:01:00 AM |
+| Nagpur | 05:32:05 AM | 05:32:00 AM |
+| Guwahati | 04:31:51 AM | 04:32:00 AM |
 
 ### Sunset
 
-```
-+----------------------+-------------+--------------+
-| Location             | JA          | RMC Observed |
-+----------------------+-------------+--------------+
-| New Delhi            | 07:12:06 PM | 07:12:00 PM  |
-| Chennai              | 06:30:48 PM | 06:31:00 PM  |
-| Kolkata              | 06:15:18 PM | 06:15:00 PM  |
-| Mumbai               | 07:10:50 PM | 07:11:00 PM  |
-| Nagpur               | 06:49:44 PM | 06:50:00 PM  |
-| Guwahati             | 06:08:50 PM | 06:09:00 PM  |
-+----------------------+-------------+--------------+
-```
+| Location | JA | RMC Observed |
+|---|---|---|
+| New Delhi | 07:12:06 PM | 07:12:00 PM |
+| Chennai | 06:30:48 PM | 06:31:00 PM |
+| Kolkata | 06:15:18 PM | 06:15:00 PM |
+| Mumbai | 07:10:50 PM | 07:11:00 PM |
+| Nagpur | 06:49:44 PM | 06:50:00 PM |
+| Guwahati | 06:08:50 PM | 06:09:00 PM |
 
 These witnesses evaluate:
 
