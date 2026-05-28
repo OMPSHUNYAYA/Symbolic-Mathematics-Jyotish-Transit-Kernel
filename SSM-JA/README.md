@@ -31,11 +31,11 @@ Key changes from earlier versions:
 
 This completes the single-file architecture.
 
-The browser now receives a fully self-contained deterministic observation environment through a single download.
+The browser now receives a fully self-contained deterministic realization environment through a single download.
 
 ---
 
-## **JA Structural Planetary Observatory Architecture**
+## JA Structural Planetary Observatory Architecture
 
 The browser itself becomes a self-contained deterministic planetary realization engine.
 
@@ -314,7 +314,7 @@ It is a calculation and observation system only.
 - `200+` charts manually verified across the supported range (`1950–2100`)
 - Strong observational consistency demonstrated across the tested dataset
 - Long-horizon Vimshottari Dasha timelines show bounded observational variation across tested modern ranges
-- Sunrise, sunset, moonrise, and moonset realizations demonstrate close alignment with official post-event meteorological observations and independently published astronomical records
+- Sunrise, sunset, moonrise, and moonset realizations demonstrate close alignment with official post-event observational records and independently published astronomical datasets
 - Automated validation infrastructure is planned following the SSM-JTK methodology, expected in a follow-on release
 
 The current release is intentionally labeled:
@@ -344,7 +344,7 @@ An expanded validation archive is currently in preparation.
 
 Future validation artifacts may include:
 
-- official Government meteorological comparison sheets
+- official meteorological comparison sheets
 - frozen observational datasets
 - structured test vectors
 - automated validator scripts
@@ -411,9 +411,9 @@ The goal is stable, reproducible, and observationally coherent deterministic rea
 
 ---
 
-## Cross-Regional Observational Witness — India (Sunrise)
+## Cross-Regional Observational Witness — India (Sunrise & Sunset)
 
-On `28 May 2026`, sunrise realization was compared against post-event sunrise values collected from **Regional Meteorological Centres (RMC)** live portals after the morning observation window across six geographically distributed Indian witnesses:
+On `28 May 2026`, sunrise and sunset realization were compared against post-event values collected from **Regional Meteorological Centres (RMC)** live portals after the corresponding sunrise and sunset observation windows across six geographically distributed Indian witnesses:
 
 - New Delhi
 - Chennai
@@ -422,7 +422,7 @@ On `28 May 2026`, sunrise realization was compared against post-event sunrise va
 - Nagpur
 - Guwahati
 
-JA values shown below were generated from the embedded deterministic planetary structure and remained unchanged throughout observation and validation.
+JA values shown below were generated from the embedded deterministic planetary structure and remained unchanged throughout observation, validation, and repeated realization.
 
 The objective is **not bit-identical agreement**.
 
@@ -432,14 +432,35 @@ Example date:
 
 `28 May 2026`
 
-| Location | JA | RMC Observed |
-|---|---:|---:|
-| New Delhi | 05:24:49 AM | 05:25:00 AM |
-| Chennai | 05:41:30 AM | 05:42:00 AM |
-| Kolkata | 04:52:19 AM | 04:52:00 AM |
-| Mumbai | 06:01:08 AM | 06:01:00 AM |
-| Nagpur | 05:32:05 AM | 05:32:00 AM |
-| Guwahati | 04:31:51 AM | 04:32:00 AM |
+### Sunrise
+
+```
++----------------------+-------------+--------------+
+| Location             | JA          | RMC Observed |
++----------------------+-------------+--------------+
+| New Delhi            | 05:24:49 AM | 05:25:00 AM  |
+| Chennai              | 05:41:30 AM | 05:42:00 AM  |
+| Kolkata              | 04:52:19 AM | 04:52:00 AM  |
+| Mumbai               | 06:01:08 AM | 06:01:00 AM  |
+| Nagpur               | 05:32:05 AM | 05:32:00 AM  |
+| Guwahati             | 04:31:51 AM | 04:32:00 AM  |
++----------------------+-------------+--------------+
+```
+
+### Sunset
+
+```
++----------------------+-------------+--------------+
+| Location             | JA          | RMC Observed |
++----------------------+-------------+--------------+
+| New Delhi            | 07:12:06 PM | 07:12:00 PM  |
+| Chennai              | 06:30:48 PM | 06:31:00 PM  |
+| Kolkata              | 06:15:18 PM | 06:15:00 PM  |
+| Mumbai               | 07:10:50 PM | 07:11:00 PM  |
+| Nagpur               | 06:49:44 PM | 06:50:00 PM  |
+| Guwahati             | 06:08:50 PM | 06:09:00 PM  |
++----------------------+-------------+--------------+
+```
 
 These witnesses evaluate:
 
@@ -452,7 +473,7 @@ The goal is not perfect agreement with every published source.
 
 The goal is stable, reproducible, and observationally coherent deterministic realization.
 
-Core invariant remains:
+**Core invariant remains:**
 
 `same structure -> same realization`
 
@@ -907,7 +928,7 @@ A reviewer may test the following:
 
 ---
 
-## 📜 **License**
+## 📜 License
 
 See: [LICENSE](./LICENSE)
 
