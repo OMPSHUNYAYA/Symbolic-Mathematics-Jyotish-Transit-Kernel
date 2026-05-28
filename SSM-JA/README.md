@@ -411,6 +411,53 @@ The goal is stable, reproducible, and observationally coherent deterministic rea
 
 ---
 
+## Cross-Regional Observational Witness — India (Sunrise)
+
+On `28 May 2026`, sunrise realization was compared against post-event sunrise values collected from **Regional Meteorological Centres (RMC)** live portals after the morning observation window across six geographically distributed Indian witnesses:
+
+- New Delhi
+- Chennai
+- Kolkata
+- Mumbai
+- Nagpur
+- Guwahati
+
+JA values shown below were generated from the embedded deterministic planetary structure and remained unchanged throughout observation and validation.
+
+The objective is **not bit-identical agreement**.
+
+The objective is to evaluate whether deterministic offline realization remains observationally coherent across geographically distributed witnesses.
+
+Example date:
+
+`28 May 2026`
+
+| Location | JA | RMC Observed |
+|---|---:|---:|
+| New Delhi | 05:24:49 AM | 05:25:00 AM |
+| Chennai | 05:41:30 AM | 05:42:00 AM |
+| Kolkata | 04:52:19 AM | 04:52:00 AM |
+| Mumbai | 06:01:08 AM | 06:01:00 AM |
+| Nagpur | 05:32:05 AM | 05:32:00 AM |
+| Guwahati | 04:31:51 AM | 04:32:00 AM |
+
+These witnesses evaluate:
+
+- cross-regional realization stability
+- timezone-aware deterministic continuity
+- local horizon realization coherence
+- portable observational reproducibility
+
+The goal is not perfect agreement with every published source.
+
+The goal is stable, reproducible, and observationally coherent deterministic realization.
+
+Core invariant remains:
+
+`same structure -> same realization`
+
+---
+
 ## Why Manual Verification Matters
 
 SSM-JA is not only tested through single-day planetary output.
