@@ -312,8 +312,8 @@ It is a calculation and observation system only.
 **Current validation status:**
 
 - `200+` charts manually verified across the supported range (`1950–2100`)
-- Strong observational consistency demonstrated across the tested dataset
-- Long-horizon Vimshottari Dasha timelines show bounded observational variation across tested modern ranges
+- Strong observational consistency observed across the tested dataset
+- Long-horizon Vimshottari Dasha timelines showed bounded observational variation across tested modern ranges
 - Sunrise, sunset, moonrise, and moonset realizations demonstrate close alignment with official post-event observational records and independently published astronomical datasets
 - Automated validation infrastructure is planned following the SSM-JTK methodology, expected in a follow-on release
 
@@ -490,6 +490,53 @@ This is a strong cumulative test because it depends on:
 - long-range timeline accumulation
 
 If a Dasha timeline remains close after approximately `100+` years, the result provides meaningful evidence of cumulative structural stability.
+
+---
+
+## **Long-Horizon Dasha Stability**
+
+Long-horizon Dasha validation was tested across:
+
+- DST and non-DST regions
+- geographically distributed locations
+- historically complex timezone regions
+- multi-decade continuity cases
+- high-latitude and future-date stress cases
+
+These tests evaluate whether Dasha realization remains observationally stable when civil-time handling becomes difficult.
+
+**Observed structural pattern:**
+
+- explicit UTC offsets preserve deterministic input replay
+- geographically distributed charts remain observationally stable
+- timezone ambiguity becomes visible rather than hidden
+- long-horizon Dasha realization remained bounded across tested cases
+
+This matters because Dasha realization depends cumulatively on:
+
+- Moon longitude
+- Nakshatra placement
+- birth balance
+- accumulated Dasha arithmetic
+- civil-time normalization
+
+Small civil-time differences may accumulate into larger long-horizon Dasha variation.
+
+SSM-JA uses explicit offsets:
+
+`birth input -> explicit UTC moment -> deterministic kernel -> Dasha realization`
+
+**Core observation:**
+
+`same input -> same UTC moment -> same realization`
+
+This demonstrates:
+
+- deterministic replay
+- civil-time transparency
+- observational stability across tested cases
+
+It does **not** imply astronomical correctness guarantees.
 
 ---
 
