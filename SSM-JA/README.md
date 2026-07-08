@@ -501,17 +501,19 @@ Long-horizon Dasha validation was tested across:
 
 - DST and non-DST regions
 - geographically distributed locations
-- historically complex timezone regions
+- historically complex civil-time regions
 - multi-decade continuity cases
 - high-latitude and future-date stress cases
+- neighbouring-region timezone comparison cases
 
 These tests evaluate whether Dasha realization remains observationally stable when civil-time handling becomes difficult.
 
 **Observed structural pattern:**
 
 - explicit UTC offsets preserve deterministic input replay
-- geographically distributed charts remain observationally stable
-- timezone ambiguity becomes visible rather than hidden
+- civil-time assumptions remain visible instead of hidden
+- geographically distributed charts remain observationally stable across tested cases
+- timezone ambiguity becomes testable rather than silently absorbed
 - long-horizon Dasha realization remained bounded across tested cases
 
 This matters because Dasha realization depends cumulatively on:
@@ -526,7 +528,7 @@ Small civil-time differences may accumulate into larger long-horizon Dasha varia
 
 SSM-JA uses explicit offsets:
 
-`birth input -> explicit UTC moment -> deterministic kernel -> Dasha realization`
+`birth input -> declared UTC offset -> explicit UTC moment -> deterministic kernel -> Dasha realization`
 
 **Core observation:**
 
@@ -536,28 +538,82 @@ This demonstrates:
 
 - deterministic replay
 - civil-time transparency
+- timezone-assumption visibility
 - observational stability across tested cases
 
 It does **not** imply astronomical correctness guarantees.
 
 ---
 
+### Regional Timezone Stability Example — Astana and Tashkent
+
+Additional future-date stress checks were performed across several geographically and timezone-sensitive locations, including high-latitude regions, historically complex civil-time regions, and neighbouring regional comparison cases.
+
+Astana, Kazakhstan and Tashkent, Uzbekistan are used here as one focused example because the comparison helps make timezone-rule assumptions visible.
+
+These cases test whether long-horizon Dasha realization remains stable when the same declared UTC-offset assumption is used.
+
+Using a declared UTC+5 offset for this regional comparison, the following SSM-JA first-cycle Mahadasha end dates were observed:
+
+| Date | Time | Location | JA first-cycle Mahadasha end date |
+|---|---:|---|---|
+| 21 May 2098 | 02:30 PM | Astana, Kazakhstan | 25 November 2214 |
+| 21 May 2098 | 02:30 PM | Tashkent, Uzbekistan | 25 November 2214 |
+| 01 January 2050 | 09:30 AM | Astana, Kazakhstan | 15 April 2157 |
+| 01 January 2050 | 09:30 AM | Tashkent, Uzbekistan | 15 April 2157 |
+
+This example is useful because long-horizon Dasha boundaries can be sensitive to civil-time interpretation.
+
+In the current research sample, SSM-JA remained internally consistent across this Astana/Tashkent regional comparison when the same declared UTC-offset assumption was used.
+
+The observed pattern is:
+
+`same local input + same declared UTC offset + same release -> same UTC moment -> same Dasha realization`
+
+Systems that depend on hidden timezone databases, projected future rules, or manual DST correction inputs may produce visibly different long-horizon Dasha boundaries when the civil-time assumption changes.
+
+SSM-JA does not claim that timezone complexity disappears.
+
+Its advantage is that the timezone assumption is explicit, replayable, and testable:
+
+`same input + same declared UTC offset + same release -> same realization`
+
+`changed UTC offset -> changed realization`
+
+This supports civil-time transparency and long-horizon Dasha stability research.
+
+---
+
 ## Realization Variation
 
-Minor variations may occur across astrology systems due to differences in realization pathways including:
+Minor variations may occur across astrology or astronomy systems due to differences in realization pathways including:
 
 - timezone interpretation
-- interpolation policies
+- historical DST handling
+- future timezone-rule projection
 - civil-time normalization
+- interpolation policies
 - ayanamsa handling
 - regional calculation conventions
 - calendar boundary handling
 - rounding policies
 - Dasha transition conventions
 
-SSM-JA should be evaluated as a deterministic observational atlas rather than as a bit-identical clone of any other software.
+A one-hour civil-time difference can become significant in long-horizon Dasha realization because the Dasha sequence is derived from the resolved UTC moment, Moon longitude, Nakshatra placement, and accumulated Dasha arithmetic.
 
-The system is intended to support transparency, reproducibility, and realization-layer observability within the supported range.
+SSM-JA should therefore be evaluated as a deterministic observational atlas rather than as a bit-identical clone of any other software.
+
+The system is designed to make realization assumptions visible.
+
+Its key advantage is not that timezone complexity disappears.
+
+Its key advantage is that timezone assumptions are declared, replayable, and testable:
+
+`same input + same declared UTC offset + same release -> same realization`
+
+`changed UTC offset -> changed realization`
+
+This supports transparency, reproducibility, and realization-layer observability within the supported range.
 
 ---
 
