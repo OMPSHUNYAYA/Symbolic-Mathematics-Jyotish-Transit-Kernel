@@ -1,4 +1,4 @@
-# SSM-Jyotish Transit Kernel (SSM-JTK) - ephemeris-independent daily sidereal longitudes (Lahiri), with rasi and node identity
+# SSM-Jyotish Transit Kernel (SSM-JTK) - runtime-ephemeris-independent daily sidereal longitudes (Lahiri), with rasi and node identity
 *v2.1 - Public research release (observation-only)*
 
 ![GitHub Release](https://img.shields.io/github/v/release/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel?style=flat&logo=github) ![GitHub Stars](https://img.shields.io/github/stars/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel?style=flat&logo=github) [![Validate](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/actions/workflows/validate.yml/badge.svg)](https://github.com/OMPSHUNYAYA/Symbolic-Mathematics-Jyotish-Transit-Kernel/actions/workflows/validate.yml)
@@ -21,8 +21,8 @@ A browser-native observational layer built directly on the deterministic SSM-JTK
 
 | Layer | Role |
 |---|---|
-| **SSM-JTK** | Deterministic ephemeris-independent transit kernel |
-| **SSM-JA** | Offline Jyotish atlas and observational interface |
+| **SSM-JTK** | Deterministic transit-kernel foundation |
+| **SSM-JA** | Runtime-ephemeris-independent offline Jyotish atlas and observational interface |
 
 SSM-JA demonstrates **deterministic observational realization** from embedded structure:
 
@@ -30,17 +30,17 @@ SSM-JA demonstrates **deterministic observational realization** from embedded st
 - browser-native Panchang and transit observation
 - Vimshottari Dasha continuity
 - runtime kernel integrity verification
-- ephemeris-independent observational continuity
+- runtime-ephemeris-independent observational continuity
 
 The complete observatory runs from:
 
 `one offline HTML file`
 
-without requiring:
+without requiring the following during local execution after download:
 
-- runtime ephemeris APIs
+- runtime access to external ephemeris APIs
 - cloud infrastructure
-- CSV loading
+- external CSV loading
 - server installation
 - external astronomical services
 
@@ -54,7 +54,7 @@ Architectural milestone:
 
 Core structural direction:
 
-`offline deterministic structure -> reproducible observational realization`
+`offline deterministic structure + fixed release -> reproducible observational realization`
 
 See:
 
@@ -68,7 +68,7 @@ The standalone `SSM-JA/` HTML observatory release includes an **open reference i
 ---
 
 ## What this is
-Ephemeris-independent Jyotish transit kernel (SSM-JTK) that provides **daily sidereal (Lahiri) longitudes**, derived **rasi index**, and **node identity** — shipped as a golden CSV with calc manifests and an **offline validator** (public research).
+Runtime-ephemeris-independent Jyotish transit kernel (SSM-JTK) that provides **daily sidereal (Lahiri) longitudes**, derived **rasi index**, and **node identity** — shipped as a golden CSV with calculation manifests and an **offline validator** for public research and observation.
 
 ---
 
@@ -144,7 +144,7 @@ The standalone browser-native observatory release inside:
 
 `SSM-JA/`
 
-includes an **open reference implementation license** for the HTML observatory layer.
+includes an **open reference implementation license** for the standalone HTML observatory layer.
 
 This includes the standalone offline deterministic observatory release:
 
@@ -157,10 +157,10 @@ See:
 
 Core structural direction:
 
-`offline deterministic structure -> reproducible observational realization`
+`offline deterministic structure + fixed release -> reproducible observational realization`
 
 ---
 
 ## Suggested GitHub Topics (Repo → About)
-jyotish • ephemeris-independent • sidereal • lahiri • rasi • nodes • ephemeris-free • astronomy • celestial-mechanics • time-series • csv • validator • reproducibility • offline • ascii • shunyaya • ssm • research
+jyotish • runtime-ephemeris-independent • sidereal • lahiri • rasi • nodes • offline-observatory • astronomy • celestial-mechanics • time-series • csv • validator • reproducibility • offline • ascii • shunyaya • ssm • research
 
