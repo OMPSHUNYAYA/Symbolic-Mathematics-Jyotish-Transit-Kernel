@@ -1,6 +1,6 @@
-# SSM-JA — Ephemeris-Independent Jyotish Atlas
+# SSM-JA — Runtime-Ephemeris-Independent Jyotish Atlas
 
-![SSM-JA](https://img.shields.io/badge/SSM--JA-Ephemeris--Independent%20Jyotish%20Atlas-gold)
+![SSM-JA](https://img.shields.io/badge/SSM--JA-Runtime--Ephemeris--Independent%20Jyotish%20Atlas-gold)
 ![Offline](https://img.shields.io/badge/Runtime-Offline-green)
 ![Browser](https://img.shields.io/badge/Platform-Single--File%20HTML-blue)
 ![Deterministic](https://img.shields.io/badge/Calculation-Deterministic-purple)
@@ -49,18 +49,18 @@ The diagram below summarizes the architectural direction of JA / SSM-JA as a por
 
 Core invariant:
 
-`same structure -> same realization`
+`same declared structure + same release -> same realization`
 
 ---
 
 ## Overview
 
-JA or SSM-JA is an ephemeris-independent Jyotish observation atlas built as a single-file offline browser application.
+JA or SSM-JA is a runtime-ephemeris-independent Jyotish observation atlas built as a single-file offline browser application.
 
-It demonstrates that a useful Jyotish observation environment can run locally from embedded deterministic structure, without requiring:
+It demonstrates that a useful Jyotish observation environment can run locally from embedded deterministic structure, without requiring the following during execution after download:
 
 - internet access
-- runtime ephemeris APIs
+- runtime external ephemeris APIs
 - external CSV loading
 - cloud services
 - database setup
@@ -96,13 +96,13 @@ SSM-JA explores a different structural direction:
 
 The goal is not to replace high-precision ephemeris systems.
 
-The goal is to demonstrate that a bounded observational Jyotish atlas can remain deterministic, portable, and reproducible after removing runtime ephemeris dependency.
+The goal is to demonstrate that a bounded observational Jyotish atlas can remain deterministic, portable, and reproducible after removing runtime access to external ephemeris sources during execution.
 
 ---
 
 ## Challenge
 
-Try to break the dependency-elimination claim.
+Try to challenge the dependency-authority claim.
 
 The claim is not:
 
@@ -110,17 +110,17 @@ The claim is not:
 
 The claim is:
 
-`within a bounded observational range, runtime ephemeris dependency is not required for reproducible chart observation`
+`within a bounded observational range and a fixed release, runtime access to external ephemeris sources is not required for reproducible chart observation`
 
 A valid challenge would demonstrate:
 
-- same input producing inconsistent output
-- offline mode failing due to hidden dependency
+- same input producing inconsistent output within the same release
+- offline mode failing due to hidden runtime dependency
 - embedded kernel mismatch remaining undetected
-- supported-range Dasha timelines showing unbounded drift
-- deterministic chart structure failing under repeat execution
+- supported-range Dasha timelines showing unbounded drift across tested cases
+- deterministic chart structure failing under repeated execution with the same file and same input
 
-If none of these occur, the structural claim becomes stronger.
+If none of these occur, the structural claim becomes more credible within the declared scope.
 
 ---
 
@@ -136,7 +136,7 @@ Layer separation:
 
 | Layer | Role |
 |---|---|
-| SSM-JTK | Deterministic ephemeris-independent transit kernel |
+| SSM-JTK | Deterministic transit-kernel foundation |
 | SSM-JA | Browser-based Jyotish atlas and observation interface |
 
 This separation is important.
@@ -169,7 +169,7 @@ Future validation artifacts may progressively follow the same reproducible valid
 
 This preserves the broader structural direction:
 
-`offline deterministic structure -> reproducible observational realization`
+`offline deterministic structure + fixed release -> reproducible observational realization`
 
 ---
 
@@ -180,7 +180,7 @@ SSM-JA supports the broader Shunyaya Dependency Elimination Framework.
 
 The dependency under examination is:
 
-`runtime ephemeris dependency`
+`runtime access to external ephemeris sources during execution`
 
 The preserved structure is:
 
@@ -192,11 +192,11 @@ The observed output is:
 
 Core structural direction:
 
-`remove runtime ephemeris dependency -> preserve deterministic structure -> reproducible observation remains`
+`runtime ephemeris access removed during execution -> embedded sidereal structure resolved -> reproducible realization remains`
 
 This is not a claim that astronomical ephemerides are unnecessary.
 
-It is a demonstration that, within a bounded observational range, a compact deterministic structure can preserve useful chart resolution without runtime ephemeris access.
+It is a demonstration that, within a bounded observational range and fixed release, a compact deterministic structure can preserve useful chart resolution without runtime access to external ephemeris sources during execution.
 
 ---
 
@@ -252,7 +252,7 @@ The `VERIFY/` folder preserves:
 
 This preserves the broader deterministic release principle:
 
-`same release -> same deterministic observational realization`
+`same file + same release conditions -> same deterministic observational realization`
 
 ---
 
@@ -312,9 +312,9 @@ It is a calculation and observation system only.
 **Current validation status:**
 
 - `200+` charts manually verified across the supported range (`1950–2100`)
-- Strong observational consistency observed across the tested dataset
+- Observational consistency was found across the tested dataset
 - Long-horizon Vimshottari Dasha timelines showed bounded observational variation across tested modern ranges
-- Sunrise, sunset, moonrise, and moonset realizations demonstrate close alignment with official post-event observational records and independently published astronomical datasets
+- Sunrise, sunset, moonrise, and moonset realizations showed close alignment with post-event published reference values and independently published astronomical datasets
 - Automated validation infrastructure is planned following the SSM-JTK methodology, expected in a follow-on release
 
 The current release is intentionally labeled:
@@ -334,17 +334,17 @@ These cumulative observations depend on:
 - timezone realization
 - civil-time normalization
 
-Controlled observational checks also indicate that sunrise, sunset, moonrise, and moonset realizations remain highly consistent across tested global locations when compared against:
+Controlled observational checks also indicate that sunrise, sunset, moonrise, and moonset realizations remain closely aligned across tested global locations when compared against:
 
-- official meteorological publications
-- post-event astronomical records
+- official meteorological live-portal published values
+- post-event published astronomical reference values
 - independently published astronomical datasets
 
 An expanded validation archive is currently in preparation.
 
 Future validation artifacts may include:
 
-- official meteorological comparison sheets
+- official meteorological published-value comparison sheets
 - frozen observational datasets
 - structured test vectors
 - automated validator scripts
@@ -358,13 +358,13 @@ The goal is transparency, reproducibility, and deterministic observational verif
 
 ## Observational Continuity Example
 
-Controlled observational checks include multi-day continuity comparisons against publicly available post-event records.
+Controlled observational checks include multi-day continuity comparisons against publicly available values retrieved after the corresponding dates had passed.
 
 Example location: Chicago, Illinois, USA
 
 Example period: `15 May 2026` to `23 May 2026`
 
-Values below were compared against records published on `timeanddate.com`, retrieved on `25 May 2026` for the corresponding past-event dates.
+Values below were compared against values published on `timeanddate.com`, retrieved on `25 May 2026` for the corresponding past-event dates. These are treated here as post-event published reference values, not as direct physical observations.
 
 ---
 
@@ -413,7 +413,7 @@ The goal is stable, reproducible, and observationally coherent deterministic rea
 
 ## Cross-Regional Observational Witness — India (Sunrise & Sunset)
 
-On `28 May 2026`, sunrise and sunset realization were compared against post-event values collected from **Regional Meteorological Centres (RMC)** live portals after the corresponding sunrise and sunset observation windows across six geographically distributed Indian witnesses:
+On `28 May 2026`, sunrise and sunset realization were compared against post-event published values collected from **Regional Meteorological Centre (RMC)** live portals after the corresponding sunrise and sunset times had passed across six geographically distributed Indian witnesses:
 
 - New Delhi
 - Chennai
@@ -421,6 +421,8 @@ On `28 May 2026`, sunrise and sunset realization were compared against post-even
 - Mumbai
 - Nagpur
 - Guwahati
+
+These RMC values are described here as official live-portal published values. They are not described as independently confirmed physical observations unless the relevant RMC or IMD source explicitly states that status.
 
 JA values shown below were generated from the embedded deterministic planetary structure and remained unchanged throughout observation, validation, and repeated realization.
 
@@ -434,7 +436,7 @@ Example date:
 
 ### Sunrise
 
-| Location | JA | RMC Observed |
+| Location | JA | RMC post-event published |
 |---|---|---|
 | New Delhi | 05:24:49 AM | 05:25:00 AM |
 | Chennai | 05:41:30 AM | 05:42:00 AM |
@@ -445,7 +447,7 @@ Example date:
 
 ### Sunset
 
-| Location | JA | RMC Observed |
+| Location | JA | RMC post-event published |
 |---|---|---|
 | New Delhi | 07:12:06 PM | 07:12:00 PM |
 | Chennai | 06:30:48 PM | 06:31:00 PM |
@@ -454,7 +456,7 @@ Example date:
 | Nagpur | 06:49:44 PM | 06:50:00 PM |
 | Guwahati | 06:08:50 PM | 06:09:00 PM |
 
-These witnesses evaluate:
+These comparisons evaluate:
 
 - cross-regional realization stability
 - timezone-aware deterministic continuity
@@ -467,7 +469,7 @@ The goal is stable, reproducible, and observationally coherent deterministic rea
 
 **Core invariant remains:**
 
-`same structure -> same realization`
+`same declared structure + same release -> same realization`
 
 ---
 
@@ -489,7 +491,7 @@ This is a strong cumulative test because it depends on:
 - date normalization
 - long-range timeline accumulation
 
-If a Dasha timeline remains close after approximately `100+` years, the result provides meaningful evidence of cumulative structural stability.
+If a Dasha timeline remains close after approximately `100+` years across tested references, the result provides useful evidence of cumulative structural stability within the tested scope.
 
 ---
 
@@ -528,7 +530,7 @@ SSM-JA uses explicit offsets:
 
 **Core observation:**
 
-`same input -> same UTC moment -> same realization`
+`same input + same UTC moment + same release -> same realization`
 
 This demonstrates:
 
@@ -670,7 +672,7 @@ the system should resolve to the same chart output.
 
 Core invariant:
 
-`same input -> same deterministic chart structure`
+`same input + same release -> same deterministic chart structure`
 
 This applies specifically to the released embedded kernel version.
 
@@ -779,7 +781,7 @@ Open the standalone HTML release locally in a modern browser:
 
 [Open SSM-JA_v3_3_11.html](./demo/SSM-JA_v3_3_11.html)
 
-No installation, server, internet connection, or runtime ephemeris dependency is required after download.
+No installation, server, internet connection, or runtime access to external ephemeris sources is required after download.
 
 For deterministic verification and release identity validation, see:
 
@@ -888,18 +890,18 @@ SSM-JA demonstrates that a complex Jyotish observation environment can be delive
 with:
 
 - embedded deterministic kernel structure
-- no runtime ephemeris dependency
+- no runtime access to external ephemeris sources during execution
 - no cloud dependency
 - no CSV loading
 - no installation
 - no external API
 - reproducible local execution
 
-This is a major proof direction for dependency elimination.
+This is a major reference direction for dependency-authority reduction.
 
-The system shows that, at least within a bounded observational range, useful chart resolution can remain visible after removing runtime ephemeris dependency.
+The system shows that, at least within a bounded observational range and fixed release, useful chart resolution can remain visible after removing runtime access to external ephemeris sources during execution.
 
-This release also serves as a concrete, runnable demonstration of the Shunyaya structural principle within the domain of astronomical observation.
+This release also serves as a concrete, runnable reference implementation of a Shunyaya structural pattern within the domain of planetary observation.
 
 ---
 
@@ -913,11 +915,11 @@ The same architecture may support future astronomical observatory systems:
 - deterministic sky-state reconstruction
 - local celestial event dashboards
 - educational astronomy interfaces
-- ephemeris-independent structural visualization
+- runtime-ephemeris-independent structural visualization
 
 SSM-JA is therefore an applied starting point.
 
-The broader direction is astronomy-grade deterministic observability.
+The broader direction is astronomy-aware deterministic observability research.
 
 ---
 
@@ -925,21 +927,21 @@ The broader direction is astronomy-grade deterministic observability.
 
 SSM-JA is part of the Shunyaya ecosystem.
 
-It aligns with the structural principle:
+It aligns with a bounded structural pattern:
 
-`output = resolve(structure)`
+`supported_output = resolve(declared_structure)`
 
 In this case:
 
 `jyotish_output = resolve(embedded_sidereal_kernel_structure)`
 
-The broader Shunyaya direction explores whether correctness, admissibility, and observability can remain stable after removing assumed dependencies.
+The broader Shunyaya direction explores whether supported outputs, admissibility, and observability can remain reproducible after reducing dependency on assumed runtime authorities.
 
 The central requirement is that the preserved structure remains complete and consistent.
 
 SSM-JA contributes one concrete observational example:
 
-`ephemeris-independent browser Jyotish atlas`
+`runtime-ephemeris-independent browser Jyotish atlas`
 
 Master documentation and ecosystem index:
 
@@ -957,13 +959,13 @@ A reviewer may test the following:
 4. Generate Rasi, Navamsa, Nakshatra, full Vimshottari Dasha (with timestamps), and Panchang.
 5. Verify Dasha timeline behavior and long-horizon boundaries against an independent reference.
 6. Repeat the exact same input and confirm identical deterministic output.
-7. (Optional) Compare sunrise/sunset values with official meteorological records for the same location and date.
+7. (Optional) Compare sunrise/sunset values with official meteorological live-portal published values or other post-event published reference values for the same location and date.
 
 **Core expected behavior:**
 
-- `same input -> same chart output`
-- `same embedded kernel -> same calculation structure`
-- `offline browser -> reproducible observation`
+- `same input + same release -> same chart output`
+- `same embedded kernel + same release -> same calculation structure`
+- `offline browser + compatible execution conditions -> reproducible observation`
 
 ---
 
@@ -1040,16 +1042,16 @@ SSM-JA is a deterministic offline observational atlas.
 
 It is not a prediction engine, certified astronomical software, or a replacement for expert judgment.
 
-It demonstrates that a meaningful Jyotish calculation environment can remain visible from embedded structure alone.
+It demonstrates that a meaningful Jyotish calculation environment can remain visible from embedded deterministic structure within a bounded observational release.
 
 The system operates without:
 
-- runtime ephemeris dependency
+- runtime access to external ephemeris sources during execution
 - cloud infrastructure
 - CSV loading
 - installation requirements
 
-`offline deterministic structure -> reproducible observational realization`
+`offline deterministic structure + fixed release -> reproducible observational realization`
 
 *Part of the Shunyaya Framework. Built on the SSM-JTK deterministic kernel.*
 
