@@ -15,7 +15,7 @@ Option B
 
 Open from repository root:
 
-demo/SSM-JA_v3_3_11.html
+SSM-JA/demo/SSM-JA_v3_3_11.html
 
 Supported range:
 01 Jan 1950 -> 31 Dec 2100
@@ -24,9 +24,9 @@ Supported range:
 2. Observe
 
 deterministic offline observational realization
-no runtime ephemeris dependency during execution
+no runtime access to external ephemeris sources during execution
 no cloud dependency
-no runtime CSV loading
+no external CSV loading during execution
 no external astronomical API dependency
 no server-side realization dependency
 browser-local deterministic realization
@@ -37,7 +37,7 @@ deterministic timezone-aware chart realization
 
 chart realization is resolved from embedded deterministic structure
 
-correctness = resolve(structure)
+supported_output = resolve(declared_structure)
 
 
 3. Expected baseline behavior
@@ -68,33 +68,37 @@ embedded_structure_complete = TRUE
 AND
 embedded_structure_consistent = TRUE
 
-observational_realization_visible iff
+observational_realization_visible requires
+required_input_structure_complete
+AND
 embedded_structure_complete
 AND
 embedded_structure_consistent
+AND
+supported_range_admitted
 
 jyotish_output = resolve(embedded_sidereal_kernel_structure)
 
 
 5. Expected behavior
 
-same input
+same input + same release
 -> same chart output
 
-same input
+same input + same release
 -> same Dasha realization
 
-same input
+same input + same release
 -> same Panchang realization
 
-same release
+same file + same release conditions
 -> same deterministic observational structure
 
-offline execution
--> identical deterministic realization
+offline execution under compatible browser conditions
+-> reproducible deterministic realization
 
-runtime dependency variation
-does not determine observational correctness
+external runtime dependency variation
+does not determine supported realization within the declared release scope
 
 
 6. Verify deterministic realization
@@ -119,7 +123,7 @@ same integrity state
 
 Confirm:
 
-same input -> same deterministic chart structure
+same input + same release -> same deterministic chart structure
 
 
 6.1 Verify deterministic continuity
@@ -230,7 +234,7 @@ Then re-enter the same birth data with timezone `+00:00` (UTC).
 Expected:
 
 observable chart realization changes
-observable Panchang changes (sunrise/sunset shifts by approximately 5h 30m)
+observable Panchang or local-time-context changes according to the selected timezone input
 observable Dasha continuity variation where applicable
 
 Confirm:
@@ -272,7 +276,7 @@ same observational structure
 Note:
 
 runtime execution ordering
-does not determine chart correctness
+does not determine supported chart realization within the declared release scope
 
 
 13. Verify structural transitions
@@ -347,7 +351,7 @@ is part of the release identity
 
 17. Observational realization model
 
-resolve(structure) ->
+resolve(declared_structure) ->
 
 RESOLVED      if supported deterministic structure is complete
 BLOCKED       if required input structure is incomplete
@@ -355,20 +359,22 @@ BLOCKED       if required input structure is incomplete
 
 18. Core invariant
 
-jyotish_output = resolve(structure)
+jyotish_output = resolve(declared_structure)
 
-observational_realization_visible iff
-required structure is complete
+observational_realization_visible requires
+required_input_structure_complete
 AND
 embedded deterministic kernel remains consistent
+AND
+supported_range_admitted
 
-same input
+same input + same release
 -> same chart output
 
-same release
+same file + same release conditions
 -> same deterministic realization
 
-Correctness claims apply only within
+Supported realization claims apply only within
 the supported observational release range.
 
 
@@ -380,15 +386,15 @@ identical input structure
 identical embedded release
 -> identical observational continuity
 
-no runtime ephemeris dependency during execution
+no runtime access to external ephemeris sources during execution
 
 no cloud dependency
 
-no runtime CSV dependency
+no external CSV loading during execution
 
 no external astronomical API dependency
 
-offline browser execution remains reproducible
+offline browser execution remains reproducible under compatible browser conditions
 
 invalid or incomplete structure
 does not produce observational realization
@@ -396,11 +402,11 @@ does not produce observational realization
 
 Result
 
-Deterministic observational realization confirmed for JA or SSM-JA.
+Deterministic observational realization can be confirmed for JA or SSM-JA under the same file, same input, same release, and compatible browser execution conditions.
 
-Bounded observational correctness is resolved from embedded deterministic structure —
+Bounded supported realization is resolved from embedded deterministic structure within the declared release scope —
 not from runtime ephemeris streaming,
 cloud realization systems,
-runtime interpolation dependency,
+runtime external ephemeris access,
 external astronomical APIs,
 or server-side realization infrastructure.
