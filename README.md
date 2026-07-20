@@ -62,8 +62,10 @@ See:
 - [SSM-JA LICENSE](./SSM-JA/LICENSE)
 - [SSM-JA VERIFY](./SSM-JA/VERIFY/)
 
-**Open license note:** 
-The standalone `SSM-JA/` HTML observatory release includes an **open reference implementation license** for offline deterministic observational execution.
+**License note:**  
+The standalone `SSM-JA/` reference implementation is free to use, copy, modify, test, study, and redistribute without a license fee, subject to the terms stated in `SSM-JA/LICENSE`.
+
+Documentation, architecture materials, specifications, diagrams, and explanatory content within `SSM-JA/` are subject to the separate terms stated in that license.
 
 ---
 
@@ -138,26 +140,15 @@ We do not redistribute third-party raw data unless the licence explicitly permit
 
 ---
 
-### **SSM-JA Open Reference Implementation**
+### **SSM-JA Reference Implementation**
 
-The standalone browser-native observatory release inside:
+See: [`SSM-JA/LICENSE`](SSM-JA/LICENSE)
 
-`SSM-JA/`
+The SSM-JA reference implementation and associated verification artifacts are free to use, copy, modify, test, study, and redistribute without a license fee, subject to the license terms stated in `SSM-JA/LICENSE`.
 
-includes an **open reference implementation license** for the standalone HTML observatory layer.
+Documentation, architecture materials, specifications, diagrams, and explanatory content are subject to the separate terms stated in `SSM-JA/LICENSE`.
 
-This includes the standalone offline deterministic observatory release:
-
-`SSM-JA/demo/SSM-JA_v3_3_11.html`
-
-See:
-
-- `SSM-JA/LICENSE`
-- `SSM-JA/README.md`
-
-Core structural direction:
-
-`offline deterministic structure + fixed release -> reproducible observational realization`
+This repository does not claim recognition as a formal technical standard, security certification, production qualification, or third-party verification.
 
 ---
 
