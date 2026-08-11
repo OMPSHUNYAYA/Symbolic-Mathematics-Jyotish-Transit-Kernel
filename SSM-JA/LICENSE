@@ -10,16 +10,19 @@ The covered materials are divided into:
 - reference implementation and verification artifacts; and
 - documentation and architecture materials.
 
-SSM-JTK materials outside the SSM-JA licensing boundary remain subject to the
-separate licensing terms declared for SSM-JTK.
+Third-party materials and other externally sourced materials are not relicensed by
+this license. Their applicable source terms, public-domain status, licenses, or
+other rights remain separate.
+
+SSM-JTK materials outside the SSM-JA/ directory remain subject to their own
+licensing terms.
 
 2. Reference Implementation and Verification Artifacts
 
 The SSM-JA reference implementation and verification artifacts include, where
-present, the standalone browser-native observatory, embedded runtime structures,
-integrity-verification logic, test and verification artifacts, manifests,
-machine-readable configuration, and other implementation or verification files
-distributed as part of SSM-JA.
+present, the standalone browser implementation, embedded kernels, integrity checks,
+verification records, test artifacts, configuration, and other implementation or
+verification files created for SSM-JA.
 
 Permission is granted, without a license fee, to use, copy, modify, test, study,
 and redistribute these materials for lawful purposes, including commercial and
@@ -30,17 +33,16 @@ applicable copyright or attribution notices included with the original materials
 
 Modified implementation or verification files must be clearly identified as
 modified and must not imply that the modifications were verified, certified,
-endorsed, approved, canonical, or authored by the original project maintainers.
+endorsed, or authored by the original project maintainers.
 
-Third-party components and separately identified materials remain subject to their
-own licenses and notices.
+Third-party components remain subject to their own licenses and notices.
 
 3. Documentation and Architecture Materials
 
 Unless a file or section states otherwise, SSM-JA documentation, architectural
-descriptions, specifications, diagrams, tutorials, explanatory materials, and
-other human-readable documentation are licensed under the Creative Commons
-Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+descriptions, specifications, diagrams, and explanatory materials are licensed
+under the Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
 
 Under that license, these materials may be shared and adapted for non-commercial
 purposes with appropriate attribution, a link to the license, and an indication
@@ -80,76 +82,47 @@ Attribution must not imply endorsement.
 
 This license does not grant trademark rights or permission to imply endorsement.
 
-The names SSM-JA, JA, Runtime-Ephemeris-Independent Jyotish Atlas, SSM-JTK,
-Shunyaya Framework, Shunyaya, and related project names may be used for accurate
-factual reference and attribution.
+The names SSM-JA, JA, Shunyaya Framework, Shunyaya, and related project names may
+be used for accurate factual reference and attribution.
 
-They must not be used to imply official authorship, endorsement, certification,
-approval, canonical status, governance authority, astronomical authority,
-professional Jyotish authority, institutional recognition, third-party
-verification, or production readiness.
-
-6. Relationship to SSM-JTK
-
-SSM-JA is structurally connected to SSM-JTK and applies the deterministic
-transit-kernel direction developed within that project to the SSM-JA
-browser-native observational reference implementation.
-
-SSM-JTK follows its own separate licensing terms.
-
-Nothing in this license changes, overrides, or relicenses SSM-JTK materials
-outside the SSM-JA licensing boundary.
-
-Use of SSM-JA does not grant governance authority over SSM-JTK, the Shunyaya
-Framework, or any other Shunyaya project.
-
-7. Verification and Assurance Claims
+6. Verification and Assurance Claims
 
 A passing integrity check, deterministic replay result, verification result,
 checksum result, or other reported result applies only to the declared files,
-inputs, embedded structures, release version, supported scope, and verification
-boundary associated with that result.
+inputs, embedded structures, release version, and verification boundary associated
+with that result.
 
-Modified files, changed kernels, changed rules, changed inputs, changed embedded
-structures, or changed verification artifacts require their own verification.
+Modified files, changed kernels, changed rules, changed inputs, or changed
+verification artifacts require their own verification.
 
 Redistribution, modification, or use of the covered materials must not imply
-third-party verification, institutional certification, standards recognition,
-production qualification, astronomical certification, professional Jyotish
-approval, legal approval, regulatory approval, or endorsement by the original
-project maintainers unless such a claim has been separately and expressly
-authorized.
+third-party verification, certification, production qualification, scientific
+validation, astronomical authority, professional Jyotish approval, legal approval,
+safety approval, or endorsement by the original project maintainers unless such a
+claim has been separately and expressly authorized.
 
-Deterministic reproducibility does not by itself establish universal astronomical
-truth, universal observational accuracy, or professional advisory correctness.
+7. No Scientific, Astronomical, Advisory, Security, or Safety Warranty
 
-8. No Security, Astronomical, Advisory, or Safety Warranty
+THE SOFTWARE AND MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, NON-INFRINGEMENT, SECURITY, SAFETY, AVAILABILITY, ACCURACY,
+OR CORRECTNESS.
 
-THE SSM-JA REFERENCE IMPLEMENTATION, VERIFICATION ARTIFACTS, ARCHITECTURE,
-DIAGRAMS, SPECIFICATIONS, AND DOCUMENTATION ARE PROVIDED "AS IS", WITHOUT WARRANTY
-OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, SECURITY,
-SAFETY, AVAILABILITY, OR CORRECTNESS.
+SSM-JA is a calculation, observation, reproducibility, research, and educational
+reference implementation.
 
-SSM-JA does not guarantee universal astronomical accuracy, prediction accuracy,
-professional Jyotish guidance, legal validity, regulatory compliance, production
-readiness, or fitness for financial, medical, safety-critical, legal, or other
-high-risk use.
+It is not a replacement for professional astronomical software, independent
+astronomical validation, professional advice, safety-critical systems, legal or
+regulatory requirements, or domain-specific validation and controls.
 
-SSM-JA is not a replacement for professional astronomical software, independent
-astronomical validation, professional advice, domain-specific controls, legal
-authorization, organizational approval, or other safeguards required by a
-particular use.
-
-9. Limitation of Liability
+8. Limitation of Liability
 
 To the maximum extent permitted by applicable law, the authors and contributors
-shall not be liable for any claim, damages, loss, injury, cost, or other liability
-arising from use, modification, distribution, implementation, extension,
-deployment, publication, verification, interpretation, prediction, advisory use,
-or reliance on SSM-JA or the covered materials.
+shall not be liable for any claim, damages, loss, or other liability arising from
+use, modification, distribution, deployment, publication, interpretation, or
+reliance on the software or materials.
 
-10. Acceptance
+9. Acceptance
 
 Using, modifying, or redistributing the covered materials indicates acceptance of
 these terms.
