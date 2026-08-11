@@ -12,26 +12,33 @@
 
 **Live browser-native observatory (GitHub Pages):**
 
-https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_3_11.html
+[https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html)
 
 ---
 
 ## What's New in This Release
 
-This release embeds the deterministic golden kernel directly inside the HTML file.
+SSM-JA v3.7.41 is the current frozen standalone release.
 
-Key changes from earlier versions:
+Key release characteristics:
 
-- earlier releases depended on external golden CSV files paired alongside the HTML
-- this release embeds the expanded deterministic golden kernel (`~29 MB`) directly within the HTML itself
-- resulting standalone file size: approximately `3.93 MB` (compressed from the raw kernel size)
+- approximately `29 MB` source Golden CSV reduced into an embedded deterministic kernel
+- approximately `4.5 MB` standalone HTML release
 - no external CSV loading required at runtime
-- no file pairing required for execution
-- this release supersedes the prior CSV-dependent architecture and completes the single-file design
+- no runtime external ephemeris API required for core calculation
+- no cloud or server-side calculation dependency
+- six presentation languages: English, Tamil, Telugu, Kannada, Malayalam, and Hindi
+- direct language startup through `?lang=en`, `?lang=ta`, `?lang=te`, `?lang=kn`, `?lang=ml`, and `?lang=hi`
+- localized date presentation
+- Share State replay and import
+- expanded Panchang observation, including selected-date and previous-date Moonrise cycles
+- Brief and Detailed print/report workflows
+- responsive desktop and mobile presentation
+- browser-side embedded-kernel SHA-256 integrity verification
 
-This completes the single-file architecture.
+The release remains a single self-contained browser application.
 
-The browser now receives a fully self-contained deterministic realization environment through a single download.
+`source Golden CSV -> embedded deterministic kernel -> standalone browser realization`
 
 ---
 
@@ -49,7 +56,7 @@ The diagram below summarizes the architectural direction of JA / SSM-JA as a por
 
 Core invariant:
 
-`same declared structure + same release -> same realization`
+`same declared structure + same inputs + same release + compatible browser conditions -> same reproducible realization`
 
 ---
 
@@ -80,9 +87,11 @@ It is not intended for prediction, prescription, critical decision-making, or pr
 
 JA is a single-file offline browser-based Jyotish Atlas.
 
-It is designed for calculation, observation, reproducibility, and research.
+It is designed for calculation, observation, reproducibility, research, and educational exploration.
 
-Automated validation infrastructure is in progress following the SSM-JTK methodology.
+Browser QA, deterministic regression checks, multilingual verification, embedded-kernel integrity verification, and final release-freeze checks have been completed for v3.7.41.
+
+Release verification is published in the `VERIFY/` folder.
 
 ---
 
@@ -159,13 +168,16 @@ The broader repository establishes the deterministic transit-kernel foundation.
 
 SSM-JA applies that foundation into a browser-based Jyotish observation environment.
 
-Future validation artifacts may progressively follow the same reproducible validation direction established by SSM-JTK, including:
+Current public verification follows the same reproducible validation direction established by SSM-JTK.
 
-- frozen representative test vectors
-- deterministic validator scripts
-- acceptance reports
-- regression verification workflows
-- embedded kernel integrity checks
+Published release-verification records include:
+
+- `VERIFY/VERIFY_v3_7_41.md`
+- `VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md`
+
+The current verification covers release identity, deterministic runtime behavior, embedded-kernel integrity, multilingual presentation, Share State behavior, responsive layout, print/report paths, Panchang continuity, and final freeze checks.
+
+Additional machine-readable test vectors or independent validator scripts may be added in future releases.
 
 This preserves the broader structural direction:
 
@@ -214,7 +226,7 @@ Dasha timelines may extend beyond `2100` because they are resolved from the nata
 
 ## Current Release Contents
 
-This release follows the standard deterministic release structure used across the Shunyaya ecosystem.
+The current release follows a compact deterministic release structure.
 
 Release folders:
 
@@ -222,37 +234,40 @@ Release folders:
 - `VERIFY/`
 - `assets/`
 
-Standalone observational release:
+Current standalone observational release:
 
-`demo/SSM-JA_v3_3_11.html`
+`demo/SSM-JA_v3_7_41.html`
 
 The standalone HTML contains:
 
-- embedded deterministic kernel data
+- embedded deterministic Golden Kernel
 - local calculation logic
-- chart rendering interface
-- Panchang calculation interface
-- Dasha timeline output
-- transit observation interface
+- Natal, Rasi, and Navamsa realization
+- Vimshottari Dasha realization
+- Panchang observation
+- Transit observation
 - global location atlas
-- runtime kernel integrity verification
+- six-language presentation
+- Share State replay/import
+- Brief and Detailed print/report workflows
+- runtime embedded-kernel integrity verification
 
-No additional runtime files are required.
+No additional runtime calculation files are required.
 
-Verification folder contents:
+Current verification records:
 
-- `VERIFY/VERIFY.txt`
-- `VERIFY/FREEZE_DEMO_SHA256.txt`
+- `VERIFY/VERIFY_v3_7_41.md`
+- `VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md`
 
-The `VERIFY/` folder preserves:
+Architecture diagram:
 
-- deterministic verification instructions
-- frozen release identity
-- reproducible hash validation workflow
+- `assets/JA_structural_observatory_architecture.png`
 
-This preserves the broader deterministic release principle:
+Earlier versioned HTML files may remain in `demo/` as historical artifacts, but v3.7.41 is the current release referenced by this README.
 
-`same file + same release conditions -> same deterministic observational realization`
+Release principle:
+
+`same file + same inputs + same release conditions -> same deterministic observational realization`
 
 ---
 
@@ -283,8 +298,15 @@ Current release includes:
 - Offline timezone-aware input
 - Runtime SHA-256 kernel integrity check
 - Single-file browser execution
+- Six-language presentation: English, Tamil, Telugu, Kannada, Malayalam, and Hindi
+- Direct language startup through `?lang=`
+- Localized full-month date presentation
+- Context-sensitive Paksha and Yoga terminology
+- Share State replay/import
+- Selected-date and previous-date Moonrise-cycle presentation
 - Optional local location presets
-- Browser print and PDF export workflow
+- Brief and Detailed browser print/PDF workflows
+- Responsive desktop and mobile layouts
 
 ---
 
@@ -309,50 +331,41 @@ It is a calculation and observation system only.
 
 ## Validation Status
 
-**Current validation status:**
+**Current release status: verified and frozen for research/observation release.**
 
-- `200+` charts manually verified across the supported range (`1950–2100`)
-- Observational consistency was found across the tested dataset
-- Long-horizon Vimshottari Dasha timelines showed bounded observational variation across tested modern ranges
-- Sunrise, sunset, moonrise, and moonset realizations showed close alignment with post-event published reference values and independently published astronomical datasets
-- Automated validation infrastructure is planned following the SSM-JTK methodology, expected in a follow-on release
+v3.7.41 verification includes:
 
-The current release is intentionally labeled:
+- JavaScript syntax: `13/13 PASS`
+- application views: `11`
+- duplicate DOM IDs: `0`
+- supported input range: `1950-01-01` through `2100-12-31`
+- embedded kernel range: `1900-01-01` through `2100-12-31`
+- runtime kernel dates: `73,414`
+- embedded kernel bodies: `9`
+- deterministic numerical regression: `PASS`
+- change-specific multilingual and print closure: `58/58 PASS`
+- kernel and Moon-cycle closure: `12/12 PASS`
+- six-language presentation: `PASS`
+- Share State integrity: `PASS`
+- responsive layout closure: `PASS`
+- embedded-kernel SHA-256 verification: `PASS`
+- final release-freeze audit: `PASS`
+- unresolved release-blocking failures: `0`
+
+The release has also undergone manual observational comparison across supported dates and geographically distributed locations, including long-horizon Dasha continuity and sunrise/sunset realization.
+
+Full verification records:
+
+- [SSM-JA v3.7.41 Verification](./VERIFY/VERIFY_v3_7_41.md)
+- [Direct Language URL Verification](./VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md)
+
+The current release remains intentionally labeled:
 
 `Research and observation only`
 
-Manual validation indicates that many long-horizon Vimshottari Dasha timelines remain observationally close across tested systems.
+Verification demonstrates deterministic and reproducible behavior within the declared release scope.
 
-Most tested cases show only small bounded variations despite approximately `120` years of accumulated Dasha continuity.
-
-These cumulative observations depend on:
-
-- Moon longitude
-- Nakshatra placement
-- birth Dasha balance
-- accumulated Dasha arithmetic continuity
-- timezone realization
-- civil-time normalization
-
-Controlled observational checks also indicate that sunrise, sunset, moonrise, and moonset realizations remain closely aligned across tested global locations when compared against:
-
-- official meteorological live-portal published values
-- post-event published astronomical reference values
-- independently published astronomical datasets
-
-An expanded validation archive is currently in preparation.
-
-Future validation artifacts may include:
-
-- official meteorological published-value comparison sheets
-- frozen observational datasets
-- structured test vectors
-- automated validator scripts
-- acceptance reports
-- expanded manual verification logs
-- regression checks against representative frozen charts
-
-The goal is transparency, reproducibility, and deterministic observational verification within the supported release range.
+It does not constitute formal astronomical certification.
 
 ---
 
@@ -469,7 +482,7 @@ The goal is stable, reproducible, and observationally coherent deterministic rea
 
 **Core invariant remains:**
 
-`same declared structure + same release -> same realization`
+`same declared structure + same inputs + same release + compatible browser conditions -> same reproducible realization`
 
 ---
 
@@ -675,29 +688,43 @@ No remote verification service is used.
 
 ## Frozen Release Identity
 
-The standalone observational atlas is distributed as a frozen deterministic release artifact.
+Current frozen release:
 
-Reference release:
+`demo/SSM-JA_v3_7_41.html`
 
-`demo/SSM-JA_v3_3_11.html`
+File size:
 
-Frozen SHA-256 identity:
+`4,635,245 bytes`
 
+Whole-file SHA-256:
+
+```text
+0fade1279bc389028ba05001e9d6542c5ab0ec40fc51988b06e55f1544451eb1
 ```
-2adffbecdc894f1be3611962fc1b96e4d983e996d5c070d4b4e955ed92b039d8
+
+Embedded Golden Kernel SHA-256:
+
+```text
+7bdebadfc764ef1f1cc2fc75cd3aaccdc48733f343f3e7311bc4503c354fa351
 ```
 
-The corresponding verification records are stored in:
+These are different identities:
 
-- `VERIFY/FREEZE_DEMO_SHA256.txt`
-- `VERIFY/VERIFY.txt`
+`whole-file HTML SHA-256 != embedded-kernel SHA-256`
+
+The whole-file SHA-256 identifies the exact frozen HTML release bytes.
+
+The embedded-kernel SHA-256 identifies the deterministic Golden Kernel used by the runtime integrity mechanism.
+
+Verification records:
+
+- [VERIFY_v3_7_41.md](./VERIFY/VERIFY_v3_7_41.md)
+- [LANGUAGE_URL_TESTS_v3_7_41.md](./VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md)
 
 Verification principle:
 
-- `same file -> same hash`
-- `different file -> different hash`
-
-The embedded deterministic kernel is part of the release identity.
+- `same file -> same whole-file hash`
+- `different file -> different whole-file hash`
 
 ---
 
@@ -833,54 +860,49 @@ without requiring the system itself to maintain persistent personal chart infras
 
 ## Quick Start
 
-Open the standalone HTML release locally in a modern browser:
+Open the current standalone HTML release in a modern browser:
 
-[Open SSM-JA_v3_3_11.html](./demo/SSM-JA_v3_3_11.html)
+[Open SSM-JA v3.7.41](./demo/SSM-JA_v3_7_41.html)
 
-No installation, server, internet connection, or runtime access to external ephemeris sources is required after download.
+No installation, server, internet connection, or runtime access to external ephemeris sources is required for core calculation after download.
 
 For deterministic verification and release identity validation, see:
 
-- `VERIFY/VERIFY.txt`
-- `VERIFY/FREEZE_DEMO_SHA256.txt`
+- [Release Verification](./VERIFY/VERIFY_v3_7_41.md)
+- [Language and URL Verification](./VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md)
 
 ---
 
-## Planned Validation Infrastructure
+## Verification and Future Validation
 
-The test vector and validator files may be added progressively.
+Current release verification is published in:
 
-Future validation structure may include:
+- `VERIFY/VERIFY_v3_7_41.md`
+- `VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md`
 
-`test_vectors_ssm_ja.json`
+These records document:
 
-A small set of frozen representative charts.
+- frozen release identity
+- whole-file SHA-256 verification
+- embedded-kernel integrity
+- deterministic numerical regression
+- multilingual presentation
+- direct language URL behavior
+- Share State behavior
+- Panchang continuity
+- print/report paths
+- responsive layout
+- final release-freeze status
 
-Initial scope may include:
+Future releases may additionally publish:
 
-- 10 to 20 representative charts
-- multiple decades
-- multiple locations
-- DST and non-DST examples
-- Dasha boundary cases
-- Nakshatra-sensitive cases
-- modern range coverage from `1950` to `2100`
+- machine-readable frozen test vectors
+- independent validator scripts
+- expanded observational datasets
+- additional regression suites
+- externally reproducible acceptance reports
 
-`validate_ssm_ja.py`
-
-A simple validator that checks:
-
-- expected Moon Nakshatra
-- expected Pada
-- expected Mahadasha at birth
-- expected final Mahadasha boundary
-- expected Rasi/Navamsa placements where available
-
-`acceptance_report_ssm_ja_v1.txt`
-
-A frozen validation output log.
-
-This mirrors the SSM-JTK validation pattern.
+This continues the broader SSM-JTK validation direction while keeping the current standalone release independently inspectable.
 
 ---
 
@@ -926,14 +948,14 @@ Current limitations include:
 - earlier historical dates remain under extended validation
 - DST offsets must be verified manually
 - output may vary slightly from other ephemeris-dependent systems
-- automated chart validation is not yet complete
+- a separate standalone external validator suite is not yet published
 - no formal certification
 - no production deployment claim
 - no prediction or interpretation layer
 
 These limits are deliberate.
 
-They preserve honesty during the first observational release.
+They preserve honesty within the current observational release.
 
 ---
 
@@ -1007,15 +1029,32 @@ Master documentation and ecosystem index:
 
 ## How to Verify This Release
 
-A reviewer may test the following:
+A reviewer may test the frozen release independently:
 
-1. Open the HTML file **offline** (no internet connection).
-2. Confirm the kernel integrity check shows **PASS**.
-3. Enter known chart data from the supported range (`1950–2100`).
-4. Generate Rasi, Navamsa, Nakshatra, full Vimshottari Dasha (with timestamps), and Panchang.
-5. Verify Dasha timeline behavior and long-horizon boundaries against an independent reference.
-6. Repeat the exact same input and confirm identical deterministic output.
-7. (Optional) Compare sunrise/sunset values with official meteorological live-portal published values or other post-event published reference values for the same location and date.
+1. Open `demo/SSM-JA_v3_7_41.html` offline in a compatible modern browser.
+2. Confirm the embedded-kernel integrity state shows **PASS**.
+3. Enter supported chart data within `1950–2100`.
+4. Generate Rasi, Navamsa, Nakshatra, Vimshottari Dasha, Panchang, and Transit output.
+5. Repeat the same inputs and confirm deterministic replay.
+6. Change presentation language and confirm that numerical realization remains unchanged.
+7. Verify the frozen whole-file SHA-256:
+
+```text
+0fade1279bc389028ba05001e9d6542c5ab0ec40fc51988b06e55f1544451eb1
+```
+
+Windows:
+
+```text
+certutil -hashfile demo\SSM-JA_v3_7_41.html SHA256
+```
+
+8. Review the published verification records:
+
+   - [VERIFY_v3_7_41.md](./VERIFY/VERIFY_v3_7_41.md)
+   - [LANGUAGE_URL_TESTS_v3_7_41.md](./VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md)
+
+9. Optionally compare observational outputs against suitable independent published references for the same date, location, and declared UTC offset.
 
 **Core expected behavior:**
 
@@ -1029,46 +1068,11 @@ A reviewer may test the following:
 
 See: [LICENSE](./LICENSE)
 
----
+The SSM-JA reference implementation and verification artifacts are free to use, copy, modify, test, study, and redistribute without a license fee, subject to the terms stated in the LICENSE.
 
-### **Open Reference Implementation (SSM-JA HTML Release)**
+Documentation, architecture materials, specifications, diagrams, and explanatory content are subject to the separate terms stated in the LICENSE, including applicable non-commercial use conditions.
 
-The SSM-JA HTML reference implementation is released under an **open reference implementation license**.
-
-No registration, fees, or approval are required to:
-
-- use
-- study
-- execute
-- verify
-- reproduce
-- or distribute
-
-the standalone HTML implementation.
-
-Attribution is encouraged but not required for the HTML implementation itself.
-
-This release demonstrates:
-
-`offline deterministic observational realization`
-
-through a single-file browser-native Jyotish atlas.
-
----
-
-### **Architecture and Documentation**
-
-The broader JA / SSM-JA architecture, structural framing, documentation, and conceptual design are licensed under:
-
-`CC BY-NC 4.0`
-
-Under CC BY-NC 4.0:
-
-- attribution is required
-- non-commercial use only
-- commercial use requires separate written permission from the authors
-
-SSM-JTK follows its own licensing terms and should be reviewed separately.
+This repository does not claim recognition as a formal technical standard, scientific certification, production qualification, or third-party verification.
 
 ---
 
