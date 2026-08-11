@@ -7,11 +7,20 @@
 
 ---
 
-# NEW — **SSM-JA Offline Deterministic Observatory**
+# **SSM-JA Offline Deterministic Observatory**
 
-**Live GitHub Pages observatory:**
+## Live browser-native observatory (GitHub Pages)
 
-https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_3_11.html
+**Open SSM-JA v3.7.41 directly in your preferred language:**
+
+- [English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)
+- [हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)
+- [ಕನ್ನಡ — Kannada](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=kn)
+- [മലയാളം — Malayalam](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ml)
+- [தமிழ் — Tamil](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ta)
+- [తెలుగు — Telugu](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=te)
+
+All six links open the same frozen SSM-JA v3.7.41 release directly in the selected presentation language.
 
 The repository now includes:
 
@@ -29,7 +38,13 @@ SSM-JA demonstrates **deterministic observational realization** from embedded st
 - offline chart realization
 - browser-native Panchang and transit observation
 - Vimshottari Dasha continuity
-- runtime kernel integrity verification
+- six-language presentation
+- direct language startup through `?lang=`
+- Share State replay and import
+- selected-date and previous-date Moonrise-cycle observation
+- Brief and Detailed print/report workflows
+- responsive desktop and mobile presentation
+- runtime embedded-kernel integrity verification
 - runtime-ephemeris-independent observational continuity
 
 The complete observatory runs from:
@@ -44,13 +59,13 @@ without requiring the following during local execution after download:
 - server installation
 - external astronomical services
 
-Standalone observatory release:
+Current frozen standalone observatory release:
 
-[Launch SSM-JA_v3_3_11.html](./SSM-JA/demo/SSM-JA_v3_3_11.html)
+[Launch SSM-JA v3.7.41](./SSM-JA/demo/SSM-JA_v3_7_41.html)
 
 Architectural milestone:
 
-`~29 MB deterministic kernel -> embedded -> compressed -> ~3.93 MB standalone observatory`
+`~29 MB source Golden CSV -> embedded deterministic kernel -> ~4.5 MB standalone HTML observatory`
 
 Core structural direction:
 
@@ -60,12 +75,13 @@ See:
 
 - [SSM-JA README](./SSM-JA/README.md)
 - [SSM-JA LICENSE](./SSM-JA/LICENSE)
-- [SSM-JA VERIFY](./SSM-JA/VERIFY/)
+- [SSM-JA v3.7.41 Verification](./SSM-JA/VERIFY/VERIFY_v3_7_41.md)
+- [SSM-JA Language and URL Verification](./SSM-JA/VERIFY/LANGUAGE_URL_TESTS_v3_7_41.md)
 
 **License note:**  
 The standalone `SSM-JA/` reference implementation is free to use, copy, modify, test, study, and redistribute without a license fee, subject to the terms stated in `SSM-JA/LICENSE`.
 
-Documentation, architecture materials, specifications, diagrams, and explanatory content within `SSM-JA/` are subject to the separate terms stated in that license.
+Documentation, architecture materials, specifications, diagrams, and explanatory content within `SSM-JA/` are licensed under the separate documentation terms stated in `SSM-JA/LICENSE`, including CC BY-NC 4.0 where applicable.
 
 ---
 
@@ -146,9 +162,9 @@ See: [`SSM-JA/LICENSE`](SSM-JA/LICENSE)
 
 The SSM-JA reference implementation and associated verification artifacts are free to use, copy, modify, test, study, and redistribute without a license fee, subject to the license terms stated in `SSM-JA/LICENSE`.
 
-Documentation, architecture materials, specifications, diagrams, and explanatory content are subject to the separate terms stated in `SSM-JA/LICENSE`.
+Documentation, architecture materials, specifications, diagrams, and explanatory content are subject to the separate documentation terms stated in `SSM-JA/LICENSE`, including CC BY-NC 4.0 where applicable.
 
-This repository does not claim recognition as a formal technical standard, security certification, production qualification, or third-party verification.
+This repository does not claim recognition as a formal technical standard, scientific certification, production qualification, or third-party verification.
 
 ---
 
