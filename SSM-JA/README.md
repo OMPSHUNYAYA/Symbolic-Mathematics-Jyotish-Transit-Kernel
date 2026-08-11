@@ -10,9 +10,11 @@
 
 ---
 
-## Live browser-native observatory (GitHub Pages)
+## 🌐 LIVE Online Panchang & Jyotish Observatory
 
-**Open directly in your preferred language:**
+**SSM-JA is a live online Panchang and Jyotish astrology calculation and observation application that also runs fully offline after download.**
+
+**Open SSM-JA v3.7.41 directly in your preferred language:**
 
 - [English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)
 - [हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)
@@ -71,7 +73,7 @@ Core invariant:
 
 ## Overview
 
-JA or SSM-JA is a runtime-ephemeris-independent Jyotish observation atlas built as a single-file offline browser application.
+JA or SSM-JA is a runtime-ephemeris-independent **Panchang and Jyotish astrology calculation and observation application**, built as a single-file browser-native atlas that runs online and fully offline after download.
 
 It demonstrates that a useful Jyotish observation environment can run locally from embedded deterministic structure, without requiring the following during execution after download:
 
@@ -94,9 +96,9 @@ It is not intended for prediction, prescription, critical decision-making, or pr
 
 ## Brief Release Description
 
-JA is a single-file offline browser-based Jyotish Atlas.
+JA is a single-file browser-based **Panchang and Jyotish astrology calculation and observation application** that also runs fully offline after download.
 
-It is designed for calculation, observation, reproducibility, research, and educational exploration.
+It is designed for chart calculation, Panchang observation, Jyotish observation, reproducibility, research, and educational exploration.
 
 Browser QA, deterministic regression checks, multilingual verification, embedded-kernel integrity verification, and final release-freeze checks have been completed for v3.7.41.
 
@@ -251,7 +253,7 @@ The standalone HTML contains:
 
 - embedded deterministic Golden Kernel
 - local calculation logic
-- Natal, Rasi, and Navamsa realization
+- Rasi and Navamsa realization
 - Vimshottari Dasha realization
 - Panchang observation
 - Transit observation
@@ -284,7 +286,6 @@ Release principle:
 
 Current release includes:
 
-- Natal chart
 - Rasi chart
 - Navamsa chart
 - Vimshottari Dasha
@@ -1107,11 +1108,11 @@ It is not derived from any prior philosophical doctrine, religious system, or tr
 
 ## Final Statement
 
-SSM-JA is a deterministic offline observational atlas.
+SSM-JA is a deterministic **online Panchang and Jyotish astrology calculation and observation application** that also operates as a fully offline standalone atlas after download.
 
 It is not a prediction engine, certified astronomical software, or a replacement for expert judgment.
 
-It demonstrates that a meaningful Jyotish calculation environment can remain visible from embedded deterministic structure within a bounded observational release.
+It demonstrates that a meaningful Panchang and Jyotish calculation environment can remain available from embedded deterministic structure within a bounded observational release.
 
 The system operates without:
 
