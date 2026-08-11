@@ -7,18 +7,20 @@
 
 ---
 
-# **SSM-JA Offline Deterministic Observatory**
+# 🌐 LIVE Online Panchang & Jyotish Observatory
 
-## Live browser-native observatory (GitHub Pages)
+### **SSM-JA — Runtime-Ephemeris-Independent Jyotish Atlas**
+
+**A live online Panchang and Jyotish astrology calculation and observation application that also runs fully offline after download.**
 
 **Open SSM-JA v3.7.41 directly in your preferred language:**
 
-- [English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)
-- [हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)
-- [ಕನ್ನಡ — Kannada](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=kn)
-- [മലയാളം — Malayalam](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ml)
-- [தமிழ் — Tamil](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ta)
-- [తెలుగు — Telugu](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=te)
+[English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)<br>
+[हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)<br>
+[ಕನ್ನಡ — Kannada](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=kn)<br>
+[മലയാളം — Malayalam](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ml)<br>
+[தமிழ் — Tamil](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ta)<br>
+[తెలుగు — Telugu](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=te)
 
 All six links open the same frozen SSM-JA v3.7.41 release directly in the selected presentation language.
 
@@ -35,8 +37,9 @@ A browser-native observational layer built directly on the deterministic SSM-JTK
 
 SSM-JA demonstrates **deterministic observational realization** from embedded structure:
 
+- **Panchang, Rasi, Navamsa, Vimshottari Dasha, Transit, Nakshatra, Yoga, Karana, Paksha, sunrise and sunset observation**
 - offline chart realization
-- browser-native Panchang and transit observation
+- browser-native Panchang and Jyotish observation
 - Vimshottari Dasha continuity
 - six-language presentation
 - direct language startup through `?lang=`
