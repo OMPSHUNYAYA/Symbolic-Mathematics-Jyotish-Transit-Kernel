@@ -15,12 +15,12 @@
 
 **Open SSM-JA v3.7.41 directly in your preferred language:**
 
-[English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)<br>
-[हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)<br>
-[ಕನ್ನಡ — Kannada](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=kn)<br>
-[മലയാളം — Malayalam](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ml)<br>
-[தமிழ் — Tamil](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ta)<br>
-[తెలుగు — Telugu](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=te)
+- [English](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=en)
+- [हिन्दी — Hindi](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=hi)
+- [ಕನ್ನಡ — Kannada](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=kn)
+- [മലയാളം — Malayalam](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ml)
+- [தமிழ் — Tamil](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=ta)
+- [తెలుగు — Telugu](https://ompshunyaya.github.io/Symbolic-Mathematics-Jyotish-Transit-Kernel/SSM-JA/demo/SSM-JA_v3_7_41.html?lang=te)
 
 All six links open the same frozen SSM-JA v3.7.41 release directly in the selected presentation language.
 
